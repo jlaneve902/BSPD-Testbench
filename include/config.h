@@ -9,9 +9,14 @@ of each macro value and ease of reuse for main*/
 #define BSPD_THRESHOLD_MS 500
 #define TICK_PERIOD_MS 1
 
-//Min and Max Voltages
-#define MAX_VOLTAGE 4.5f
-#define MIN_VOLTAGE 0.5f
+//Min and Max Voltages + Step Size for PWM
+#define MAX_VOLTAGE_MV 4500
+#define MIN_VOLTAGE_MV 500
+#define V_CHANGE_SIZE_MV 8
+
+//PWM Min and Max for STM32
+#define PWM_MAX 255
+#define PWM_MIN 0
 
 //PWM Pin Locations
 #define BRAKE_PWM_PIN D6
