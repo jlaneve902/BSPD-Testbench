@@ -1,5 +1,7 @@
 # BSPD Testbench
 
+![STM32 Test Bench Setup](images/IMG_3471.jpg)
+
 Bench signal generator for testing a brake system plausibility device (BSPD). It outputs simulated brake pressure and APPS voltages (0.5 V to 4.5 V) and shuts everything off if both pedals are held over threshold for 500 ms. Runs on an STM32 Nucleo-H563ZI with FreeRTOS, built with PlatformIO.
 
 ## Hardware
