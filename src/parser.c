@@ -3,6 +3,7 @@
 #include <stdlib.h>
 #include <ctype.h>
 #include <stdbool.h>
+#include <string.h>
 
 //Command should have format -> set app/brake to n%
 
@@ -26,7 +27,7 @@ command parseCommand(char*line){
     }
 
     if(strcmp(word, "SET") == 0){
-        word = strtok(NULL< DELIMS);
+        word = strtok(NULL, DELIMS);
     }
 
     //APPS or BRAKE

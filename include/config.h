@@ -16,6 +16,10 @@ of each macro value and ease of reuse for main*/
 #define MIN_VOLTAGE_MV 500
 #define V_CHANGE_SIZE_MV 8
 
+//Serial Settings
+#define SERIAL_BAUD 115200
+#define SERIAL_LINE_MAX 64
+
 //PWM Min and Max for STM32
 #define PWM_MAX 255
 #define PWM_MIN 0
