@@ -12,11 +12,10 @@ Bench signal generator for testing a brake system plausibility device (BSPD). It
 - Multimeter
 
 ## Pins
-
-    Throttle button    USER_BTN (blue on-board button)
-    Brake button       D2
-    Throttle PWM out   D5
-    Brake PWM out      D6
-    Green LED          LED_GREEN  (throttle over threshold)
-    Yellow LED         LED_YELLOW (brake over threshold)
-    Red LED            LED_RED    (fault)
+- Throttle button    USER_BTN (blue on-board button)
+- Brake button       D2
+- Throttle PWM out   D5
+- Brake PWM out      D6
+- Green LED          LED_GREEN  (throttle over threshold)
+- Yellow LED         LED_YELLOW (brake over threshold)
+- Red LED            LED_RED    (fault)
