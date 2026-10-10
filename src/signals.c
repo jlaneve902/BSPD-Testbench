@@ -11,10 +11,10 @@ void signalConstruct(Signal* s, uint16_t pin){
 
 void signalMove(Signal* s, bool pressed){
     if(pressed){
-        if(s->currVoltage += V_CHANGE_SIZE_MV >= MAX_VOLTAGE_MV) {s->currVoltage = MAX_VOLTAGE_MV;}
+        if(s->currVoltage + V_CHANGE_SIZE_MV >= MAX_VOLTAGE_MV) {s->currVoltage = MAX_VOLTAGE_MV;}
         else {s->currVoltage += V_CHANGE_SIZE_MV;}
     }else{
-        if(s->currVoltage -= V_CHANGE_SIZE_MV <= MIN_VOLTAGE_MV) {s->currVoltage = MIN_VOLTAGE_MV;}
+        if(s->currVoltage - V_CHANGE_SIZE_MV <= MIN_VOLTAGE_MV) {s->currVoltage = MIN_VOLTAGE_MV;}
         else{s->currVoltage -= V_CHANGE_SIZE_MV;}
     }
 }

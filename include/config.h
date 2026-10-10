@@ -1,13 +1,15 @@
 /*Macros all set in this one header file for better organization
 of each macro value and ease of reuse for main*/
 
-
 #ifndef CONFIG_H
 #define CONFIG_H
 
 //Threshold and Tick Values
 #define BSPD_THRESHOLD_MS 500
 #define TICK_PERIOD_MS 1
+
+#define THROTTLE_THRESHOLD_MV 1500
+#define BRAKE_THRESHOLD_MV    1500
 
 //Min and Max Voltages + Step Size for PWM
 #define MAX_VOLTAGE_MV 4500
