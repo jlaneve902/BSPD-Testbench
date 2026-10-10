@@ -11,6 +11,7 @@ extern "C" {
 
 typedef struct{
     uint32_t currVoltage;
+    uint32_t targetVoltage; //Serial Mode Only
     uint16_t pwmPin;
 }Signal;
 
@@ -20,7 +21,7 @@ typedef struct{
 void signalConstruct(Signal* s, uint16_t pin);
 
 /**
- * Method to either increment or decrement currVoltage value based on if pedal is pressed or not
+ * Button Mode: Method to either increment or decrement currVoltage value based on if pedal is pressed or not
  */
 void signalMove(Signal* s, bool pressed);
 
@@ -34,6 +35,15 @@ void signalWrite(const Signal* s);
  */
 void signalShutdown(Signal* s);
 
+/**
+ * Serial Mode: set target voltage for pedals from 0-100%
+ */
+void signalSetPercent(Signal* s, uint32_t percent);
+
+/**
+ * Serial Mode: move voltage towards targetVoltage
+ */
+void signalMoveToTarget(Signal* s);
 
 #ifdef __cplusplus
 }
